@@ -1,0 +1,15 @@
+.navigationBarWrapper {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  background-color: rgb(163, 83, 83);
+}
+
+.login {
+  grid-column: 9/10;
+  align-self: center;
+}
+
+.home,
+.login {
+  cursor: pointer;
+}
