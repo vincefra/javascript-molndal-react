@@ -17,7 +17,7 @@ export const HomeView = () => {
     }
 
 
-    //kolla ifall vi har loggat in tidigare för undvika att kunna logga in igen (av nån anledning funkar den ej?)
+    //kalla på vår metod innan vi fortsätter ladda sidan
     useEffect(() => {
         fetchDataFromApi()
     }, [])
