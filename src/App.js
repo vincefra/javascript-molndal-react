@@ -3,14 +3,17 @@ import { Routing } from './routes/Routing'
 import { NavigationBar } from './components/navigationbar/NavigationBar'
 import './utils/global/Global.css'
 import { UserProvider } from './utils/global/provider/UserProvider'
+import { ApiProvider } from './utils/global/provider/ApiProvider'
 
 function App() {
   return (
-    <UserProvider>
-      <Routing>
-        <NavigationBar />
-      </Routing>
-    </UserProvider>
+    <ApiProvider>
+      <UserProvider>
+        <Routing>
+          <NavigationBar />
+        </Routing>
+      </UserProvider>
+    </ApiProvider>
   );
 }
 
